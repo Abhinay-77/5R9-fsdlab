@@ -1,7 +1,11 @@
-let p= Promise((resolve,reject)=>{
-    resolve(100);
-})
+function greet(name,callback){
+    return callback(name);
 
-p.then((res)=>{
-    console.log(res);
-})
+}
+
+function c(meassge){
+    return `hello ${meassge}`;
+}
+
+let a=greet("abhinay",c);
+console.log(a)
