@@ -21,7 +21,7 @@ class EventManagement extends EventEmitter {
   
     const intervalId = setInterval(() => {
       if (progress < 100) {
-        progress += 10; 
+        progress += 50; 
         this.emit('in-progress', this.eventName, progress);  
       } else {
         clearInterval(intervalId);
