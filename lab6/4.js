@@ -5,7 +5,7 @@ const path = require('path');
 
 const server = http.createServer((req, res) => {
 
-    if (req.method === 'GET' && req.url === 'lab6/index.html') {
+    if (req.method === 'GET' && req.url === '/index.html') {
 
 
         fs.readFile(filePath, (err, data) => {
